@@ -1,0 +1,201 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prueba</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style type="text/css">
+        body {
+            font-size: 16px;
+        }
+        
+        .main-title h1 {
+            text-align: center;
+            margin: 40px 0;
+            margin-top: 60px;
+            font-size: 40px;
+            font-weight: 600;
+            position: relative;
+            color: #3088ff;
+        }
+        
+        .main-title h1::after {
+            position: absolute;
+            height: 1px;
+            box-shadow: 1px 0 black;
+            width: 50%;
+            content: '';
+            bottom: -10px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #33E6FF;
+        }
+        
+        .text-blue {
+            color: #0F3C6C;
+            font-weight: 600;
+            line-height: 1.7;
+        }
+        
+        .text-blue>span {
+            color: #3088ff;
+        }
+        
+        .title-orange {
+            color: rgba(245, 181, 91, 1);
+            font-weight: 600;
+        }
+        
+        .form-control {
+            border: 1px solid #3088ff;
+            height: 42px;
+        }
+        
+        .text-body {
+            position: relative;
+            margin-bottom: 40px;
+        }
+        
+        .text-body::after {
+            position: absolute;
+            height: 1px;
+            box-shadow: 1px 0 black;
+            width: 50%;
+            content: '';
+            bottom: -10px;
+            left: 0%;
+            background: rgba(255, 156, 0, 1);
+        }
+        
+        .checkbox label:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+        
+        .checkbox .cr {
+            position: relative;
+            display: inline-block;
+            background: rgba(245, 181, 91, 1);
+            border: 1px solid rgba(245, 181, 91, 1);
+            border-radius: .25em;
+            width: 1.3em;
+            height: 1.3em;
+            margin-right: .5em;
+        }
+        
+        .checkbox .cr .cr-icon {
+            position: absolute;
+            font-size: .8em;
+            line-height: 0;
+            top: 50%;
+            left: 15%;
+        }
+        
+        .checkbox label input[type="checkbox"] {
+            display: none;
+        }
+        
+        .checkbox label input[type="checkbox"]+.cr>.cr-icon {
+            opacity: 0;
+        }
+        
+        .checkbox label input[type="checkbox"]:checked+.cr>.cr-icon {
+            opacity: 1;
+            color: #fff;
+        }
+        
+        .checkbox label input[type="checkbox"]:disabled+.cr {
+            opacity: .5;
+        }
+        
+        .btn-primary {
+            background: rgba(245, 181, 91, 1);
+            border: none;
+            font-size: 22px;
+            font-weight: bold;
+            margin: auto;
+            display: block;
+            text-transform: uppercase;
+        }
+        
+        .checkbox {
+            padding-top: 50px;
+        }
+        
+        .checkbox label {
+            padding-left: 0!important;
+            margin: auto;
+            display: block;
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="main-title">
+                    <h1>CONTACT US</h1>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-12">
+                <div class="colum-text-up">
+                    <p class="text-blue">
+                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        <span>when an unknown printer took</span> a galley of type and scrambled it to make a type specimen
+                    </p>
+                    <p class="text-blue">galley of type and scrambled it to make a type specimen</p>
+                </div>
+                <div class="column-text-down">
+                    <div class="text-body">
+                        <h3 class="title-orange">WE SPEAKER BC INC.</h3>
+                        <h3 class="title-orange">394 4 WILKINSON RD. VICTORIA, BC. V8Z 5A2</h3>
+                    </div>
+                    <div class="map">
+                        <div style="width: 100%"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=es&amp;q=Les%20Rambles,%201%20Barcelona,%20Spain+(prueba)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+                    </div>
+                    <div class="text-body">
+                        <h3 class="title-orange">Phone: +571 111 1000 00</h3>
+                        <h3 class="title-orange">Email: info@wespeaker.com</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-12">
+                <form action="/contact" method="POST">
+                    <div class="form-group">
+                        <label class="text-blue" for="naming">Name and surname</label>
+                        <input type="text" class="form-control" name="nombre" aria-describedby="name">
+                    </div>
+                    <div class="form-group">
+                        <label class="text-blue" for="email">Your email address</label>
+                        <input type="email" class="form-control" name="email" aria-describedby="email">
+                    </div>
+                    <div class="form-group">
+                        <label class="text-blue" for="subject">Subject</label>
+                        <input type="subject" class="form-control" name="subject" aria-describedby="subject">
+                    </div>
+                    <div class="form-group">
+                        <label class="text-blue" for="messages">Your messages</label>
+                        <textarea class="form-control" name="message" rows="3"></textarea>
+                    </div>
+                    <div class="checkbox">
+                        <label style="padding-left: 0!important">
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span> is simply dummy text of the printing and typesetting
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</html>
